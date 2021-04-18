@@ -1,0 +1,22 @@
+{
+  "name": "cypress-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saradrada/cypress-course.git"
+  },
+  "author": "Sara Ortiz Drada saraodrada@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saradrada/cypress-course/issues"
+  },
+  "homepage": "https://github.com/saradrada/cypress-course#readme",
+  "devDependencies": {
+    "cypress": "^7.1.0"
+  }
+}
