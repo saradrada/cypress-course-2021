@@ -48,8 +48,14 @@ describe('Dropdowns tests', () => {
     });
 
     describe('Dynamic dropdowns tests', () => {
-        it('', () => {
-
+        it.only('Select an option', () => {
+            cy.get('#autocomplete').type('ind')
+            cy.get('.ui-menu-item').each(($el, index, $list) => {
+                if ($el.text() === ('India')) {
+                    $el.click()
+                }
+            })
+            cy.get('#autocomplete').should('have.value', 'India')
         })
     })
 
