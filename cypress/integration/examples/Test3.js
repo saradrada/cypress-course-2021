@@ -1,7 +1,6 @@
 describe(`Checkbox tests`, () => {
     before(() => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
-
     });
 
     it('', () => {
@@ -37,5 +36,30 @@ describe(`Checkbox tests`, () => {
          */
         cy.get('[type=checkbox]').check(['option1', 'option3'])
 
+    })
+})
+
+
+
+describe('Dropdowns tests', () => {
+
+    before(() => {
+        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+    });
+
+    describe('Dynamic dropdowns tests', () => {
+        it('', () => {
+
+        })
+    })
+
+    describe('Static dropdowns tests', () => {
+        it('Select an option', () => {
+            /**
+             * The select() method accepts the value property or the text of the element as a parameter
+             */
+            cy.get('select').select('option2').should('have.value', 'option2')
+            cy.get('select').select('Option1').should('have.value', 'option1')
+        })
     })
 })
